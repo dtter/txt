@@ -1,0 +1,75 @@
+All Folders in C:/Users/3nadi
+
+Python
+- To run: run OR Run Python File in Terminal
+- Command Pallete--> select interpreter: conda OR Python 3.9.2 or 3.9.1
+- Run interpreter for ipynb: conda # UPDATE: YOU CAN RUN USING THE PYTHON 3.9.2 INTERPRETER YEAY
+
+import module:
+import [module]
+[module].[function]
+
+aliasing
+import [module] as [another_name]
+
+defining class
+ex:
+class Shark:
+    def swim(self):
+        print("The shark is swimming.")
+
+    def be_awesome(self):
+        print("The shark is being awesome.")
+# Shark = class
+# swim and be_awesome = object
+# self = parameter
+# make `Shark` object called `sammy`
+sammy = Shark()
+sammy.swim()
+sammy.be_awesome()
+
+
+C++
+- Run Task OR Run Build Task 
+// open in FOLDER not a SINGLE FILE
+- To run: Run build task --> Open powershell terminal --> .\ (file name)
+
+Git
+Push
+- Save --> Changes --> Commit --> Push
+Pull = update changes from github
+- Open from Github Desktop -->
+To the different branch
+- checkout OR `git checkout branchname` 
+
+--------------------------------------
+GIT CHEAT SHEET
+## CREATE
+(from existing files)
+git init
+git add .		// to mark change to the staging area
+(from existing repo)
+clone
+
+## VIEW
+status
+diff [oldid newid]
+
+## UPDATE
+fetch 			// from def. upstream
+fetch <remote>
+pull			// "pulling" changes from remote directory
+
+## PUBLISH
+push <origin/remote>
+
+## BRANCH
+checkout branch 	// to switch branch
+merge branch 		// merge into current
+branch <branch>		// branch current
+
+## OTHERS
+remote add <url> 	// register a new remote repo
+
+## TRACKING FILES
+git add <files>		// to mark change to the staging area

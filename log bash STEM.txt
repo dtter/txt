@@ -1,0 +1,113 @@
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/STEM (master)
+$ git add README.md
+fatal: pathspec 'README.md' did not match any files
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/STEM (master)
+$ git add STEM
+warning: adding embedded git repository: STEM
+hint: You've added another git repository inside your current 
+repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain 
+it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint:   git submodule add <url> STEM
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint:   git rm --cached STEM
+hint: 
+hint: See "git help submodule" for more information.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/STEM (master)
+$ git ls-files
+STEM
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/STEM (master)
+$ git commit -m "edit README.md"
+[master (root-commit) 3710d07] edit README.md
+ 1 file changed, 1 insertion(+)
+ create mode 160000 STEM
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/STEM (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/STEM (master)
+$ git remote -v
+stem    https://github.com/trinadia/STEM.git (fetch)
+stem    https://github.com/trinadia/STEM.git (push)
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/STEM (master)
+$ git push stem
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream stem master
+
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/STEM (master)
+$ git push --set-upstream stem master
+Enumerating objects: 2, done.
+Counting objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 198 bytes | 99.00 KiB/s, done.   
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/trinadia/STEM/pull/new/master 
+remote:
+To https://github.com/trinadia/STEM.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'stem'.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/STEM (master)
+$ git push
+Everything up-to-date
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/STEM (master)
+$ git add STEM/README.md
+fatal: Pathspec 'STEM/README.md' is in submodule 'STEM'
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/STEM (master)
+$ git add README.md
+fatal: pathspec 'README.md' did not match any files
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/STEM (master)
+$ cd ~/STEM/STEM
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/STEM/STEM (main)
+$ git add README.md
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/STEM/STEM (main)
+$ git ls-files
+README.md
+physics/README.md
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/STEM/STEM (main)
+$ git commit -m "edit"
+[main b27e02c] edit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/STEM/STEM (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 308 bytes | 308.00 KiB/s, done.  
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/trinadia/STEM.git
+   a2b3b1f..b27e02c  main -> main
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/STEM/STEM (main)
+$

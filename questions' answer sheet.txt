@@ -1,0 +1,56 @@
+Questions Electric Field
+1. a, b, c
+
+3. a. equal
+b. away => toward
+c. no
+d. cancel
+e. add
+f. adding
+g. 
+
+5. to their left
+
+7. a. (greatest) 3, 4, 1, 2 => 4, 3, 1, 2
+b. 3, 1 and 4 tie, 2
+
+9. a, b, c
+
+11. e,.... => b, a and c tie (how?), d
+
+Gauss' Law
+1. 8i
+3. all tie (add the charges)
+5. 2, 3, 1
+7. a, c, b, d
+9. (a) all tie; 3, 1, 2 (b) 2, 1, 3 => (a) 2, 1, 3 (b) all tie
+hint: (1) shell's charge (2) net charges of them all bcs of the concentrated charge
+* need further evaluation
+11. => impossible (b) -3q (c) impossible
+
+Electric Potential
+1. 
+
+Capacitance
+1. 1b, 2a, 3c
+3. a. y; b. y; c. all tie => a. no
+5. (a) same (b) no => (b) same (c) more (d) more
+7. (a) series (b) and (c) parallel 
+9. (a) decrease (b) same (c)decrease (d) decrease
+(e) decrease (f) decrease => all is wrong but the b 
+!! SEPARATION IS DECREASED !!
+11. Series = C1 > C2
+Parallel = C1 > C2
+1. Parallel, C1 alone, C2 alone, series
+
+Circuits 
+1. (a) equal (b) more
+3. assume R1=1; R2=2 => SWITCHED
+parallel= 0,6
+series= 3
+parallel, R1, R2, series => R2, R1
+5. (a) series (b) and (c) parallel
+7. (a) more (b) same (c) more => (a) and (b) less
+9. (a) parallel (b) series
+11. (a) same (b) less (c) more (d) more => same, same, less
+13. 

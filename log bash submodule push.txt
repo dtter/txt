@@ -1,0 +1,368 @@
+USER@LAPTOP-NSE0OGI2 MINGW64 ~
+$ cd Demo
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git add introduction_to_ml_with_python
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git commit -m "add file"
+On branch py
+Your branch is up to date with 'rem/py'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git status
+On branch py
+Your branch is up to date with 'rem/py'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git rm -r introduction_to_ml_with_python
+fatal: could not lookup name for submodule 'introduction_to_ml_with_python'
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git add introduction_to_ml
+fatal: pathspec 'introduction_to_ml' did not match any files
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git add introduction_to_ml_with_python
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git status
+On branch py
+Your branch is up to date with 'rem/py'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git pull
+Already up to date.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git clone https://github.com/trinadia/test.git
+fatal: destination path 'test' already exists and is not an empty directory.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git reset
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git reset -a
+error: unknown switch `a'
+usage: git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]
+   or: git reset [-q] [<tree-ish>] [--] <pathspec>...
+   or: git reset [-q] [--pathspec-from-file [--pathspec-file-nul]] [<tree-ish>]
+   or: git reset --patch [<tree-ish>] [--] [<pathspec>...]
+   or: DEPRECATED: git reset [-q] [--stdin [-z]] [<tree-ish>]
+
+    -q, --quiet           be quiet, only report errors
+    --mixed               reset HEAD and index
+    --soft                reset only HEAD
+    --hard                reset HEAD, index and working tree
+    --merge               reset HEAD, index and working tree
+    --keep                reset HEAD but keep local changes
+    --recurse-submodules[=<reset>]
+                          control recursive updating of submodules
+    -p, --patch           select hunks interactively
+    -N, --intent-to-add   record only the fact that removed paths will be added later
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+    -z                    DEPRECATED (use --pathspec-file-nul instead): paths are separated with NUL character
+    --stdin               DEPRECATED (use --pathspec-from-file=- instead): read paths from <stdin>
+
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git pull
+Already up to date.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git ls-files
+folder/README.md
+introduction_to_ml_with_python
+notebook.ipynb
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git rm -r introduction_to_ml_with_python
+fatal: could not lookup name for submodule 'introduction_to_ml_with_python'
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git -r
+unknown option: -r
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git add introduction_to_ml_with_python
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git status
+On branch py
+Your branch is up to date with 'rem/py'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git reset
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git add introduction_to_ml_with_python
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git commit -m "test"
+On branch py
+Your branch is up to date with 'rem/py'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git fetch https://github.com/trinadia/test.git
+From https://github.com/trinadia/test
+ * branch            HEAD       -> FETCH_HEAD
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git status
+On branch py
+Your branch is up to date with 'rem/py'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git add introduction_to_ml_with_python
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git status
+On branch py
+Your branch is up to date with 'rem/py'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git reset
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git checkout
+Your branch is up to date with 'rem/py'.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git branch
+  master
+* py
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git checkout master
+warning: unable to rmdir 'introduction_to_ml_with_python': Directory not empty
+Switched to branch 'master'
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=rem/<branch> master
+
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git remote
+rem
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git remote -v
+rem     https://github.com/trinadia/test.git (fetch)
+rem     https://github.com/trinadia/test.git (push)
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git clone https://github.com/trinadia/test.git
+fatal: destination path 'test' already exists and is not an empty directory.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=rem/<branch> master
+
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git branch --set-upstream-to=rem/master master
+Branch 'master' set up to track remote branch 'master' from 'rem'.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git pull rem master
+From https://github.com/trinadia/test
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git fetch
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git add introduction_to_ml_with_python
+warning: adding embedded git repository: introduction_to_ml_with_python
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint:   git submodule add <url> introduction_to_ml_with_python
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint:   git rm --cached introduction_to_ml_with_python
+hint: 
+hint: See "git help submodule" for more information.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git submodule add https://github.com/trinadia/test.git introduction_to_ml_with_python
+'introduction_to_ml_with_python' already exists in the index
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git commit -m "add submodule"
+[master 78a29d3] add submodule
+ 1 file changed, 1 insertion(+)
+ create mode 160000 introduction_to_ml_with_python
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git push -u rem
+To https://github.com/trinadia/test.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/trinadia/test.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git pull
+fatal: refusing to merge unrelated histories
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git status
+On branch master
+Your branch and 'rem/master' have diverged,
+and have 2 and 33 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git reset
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git status
+On branch master
+Your branch and 'rem/master' have diverged,
+and have 2 and 33 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git rm --cached introduction_to_ml_with_python
+rm 'introduction_to_ml_with_python'
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git commit -m "test"
+[master d89db03] test
+ 1 file changed, 1 deletion(-)
+ delete mode 160000 introduction_to_ml_with_python
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git push rem
+To https://github.com/trinadia/test.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/trinadia/test.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git pull
+fatal: refusing to merge unrelated histories
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git checkout py
+Switched to branch 'py'
+Your branch is up to date with 'rem/py'.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git pull
+Already up to date.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git rm --cached introduction_to_ml_with_python
+rm 'introduction_to_ml_with_python'
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git commit -m "remove"
+[py 7546b2d] remove
+ 1 file changed, 1 deletion(-)
+ delete mode 160000 introduction_to_ml_with_python
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git push -u rem
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 261 bytes | 87.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/trinadia/test.git
+   4f917d2..7546b2d  py -> py
+Branch 'py' set up to track remote branch 'py' from 'rem'.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$

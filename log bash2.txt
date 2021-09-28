@@ -1,0 +1,874 @@
+ill be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working 
+tree (same as --no-all)
+    --refresh             don't add, only refresh the index   
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are 
+ignored in dry run
+    --chmod (+|-)x        override the executable bit of the listed files
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec 
+elements are separated with NUL character
+
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git add .
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git commit -a -m "folder"
+On branch py
+nothing to commit, working tree clean
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git rm
+fatal: No pathspec was given. Which files should I remove?
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ -a
+bash: -a: command not found
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git rm -a
+error: unknown switch `a'
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check       
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec 
+elements are separated with NUL character
+
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git rm .
+fatal: not removing '.' recursively without -r
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git rm --cached
+fatal: No pathspec was given. Which files should I remove?
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ all
+bash: all: command not found
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git add -u
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git ls-files
+.gitignore
+01-introduction.ipynb
+02-supervised-learning.ipynb
+03-unsupervised-learning.ipynb
+04-representing-data-feature-engineering.ipynb
+05-model-evaluation-and-improvement.ipynb
+06-algorithm-chains-and-pipelines.ipynb
+07-working-with-text-data.ipynb
+08-conclusion.ipynb
+README.md
+cover.jpg
+data/adult.data
+data/citibike.csv
+data/ram_price.csv
+environment.yml
+images/05_gridsearch_overview.png
+images/api_table.png
+images/bag_of_words.png
+images/bag_of_words.svg
+images/classifier_comparison.png
+images/dendrogram.png
+images/iris_petal_sepal.png
+images/iris_petal_sepal.svg
+images/overfitting_underfitting_cartoon.png
+images/overfitting_underfitting_cartoon.svg
+images/pipeline.png
+images/pipeline.svg
+mglearn/__init__.py
+mglearn/datasets.py
+mglearn/make_blobs.py
+mglearn/plot_2d_separator.py
+mglearn/plot_agglomerative.py
+mglearn/plot_animal_tree.py
+mglearn/plot_cross_validation.py
+mglearn/plot_dbscan.py
+mglearn/plot_decomposition.py
+mglearn/plot_grid_search.py
+mglearn/plot_helpers.py
+mglearn/plot_improper_preprocessing.py
+mglearn/plot_interactive_tree.py
+mglearn/plot_kmeans.py
+mglearn/plot_kneighbors_regularization.py
+mglearn/plot_knn_classification.py
+mglearn/plot_knn_regression.py
+mglearn/plot_linear_regression.py
+mglearn/plot_linear_svc_regularization.py
+mglearn/plot_metrics.py
+mglearn/plot_nmf.py
+mglearn/plot_nn_graphs.py
+mglearn/plot_pca.py
+mglearn/plot_rbf_svm_parameters.py
+mglearn/plot_ridge.py
+mglearn/plot_scaling.py
+mglearn/plot_tree_nonmonotonous.py
+mglearn/plots.py
+mglearn/tools.py
+preamble.py
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git rm -a
+error: unknown switch `a'
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check       
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec 
+elements are separated with NUL character
+
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git rm --cached
+fatal: No pathspec was given. Which files should I remove?
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git rm --cached -a
+error: unknown switch `a'
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check       
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec 
+elements are separated with NUL character
+
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git rm --cached .
+fatal: not removing '.' recursively without -r
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git ls-tree
+usage: git ls-tree [<options>] <tree-ish> [<path>...]
+
+    -d                    only show trees
+    -r                    recurse into subtrees
+    -t                    show trees when recursing
+    -z                    terminate entries with NUL byte     
+    -l, --long            include object size
+    --name-only           list only filenames
+    --name-status         list only filenames
+    --full-name           use full path names
+    --full-tree           list entire tree; not just current directory (implies --full-name)
+    --abbrev[=<n>]        use <n> digits to display object names
+
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git ls-tree -r
+usage: git ls-tree [<options>] <tree-ish> [<path>...]
+
+    -d                    only show trees
+    -r                    recurse into subtrees
+    -t                    show trees when recursing
+    -z                    terminate entries with NUL byte     
+    -l, --long            include object size
+    --name-only           list only filenames
+    --name-status         list only filenames
+    --full-name           use full path names
+    --full-tree           list entire tree; not just current directory (implies --full-name)
+    --abbrev[=<n>]        use <n> digits to display object names
+
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git-rm
+bash: git-rm: command not found
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git ls-files -s
+100644 3754912ab2cb5fe45a24d0530febbad1f990e49d 0       .gitignore
+100644 24534d54e1a7a353c3e878b0e2280f924943c03d 0       01-introduction.ipynb
+100644 f896e3e39d4f015176b85e10d8501019b4ebac50 0       02-supervised-learning.ipynb
+100644 79b1494969c691ff87fcee0223a3105baaf9a1e9 0       03-unsupervised-learning.ipynb
+100644 098295bba16c8193710f6cd6a90f238fc4e3e8e1 0       04-representing-data-feature-engineering.ipynb
+100644 3e17cd2cd6d008b25bedab40db580b803092ac5c 0       05-model-evaluation-and-improvement.ipynb
+100644 cccf662a4ce3034e96150e12a8b32d421e36ac91 0       06-algorithm-chains-and-pipelines.ipynb
+100644 fac5a52e1f0945ef0013ece3da6d33623f3a8eae 0       07-working-with-text-data.ipynb
+100644 a060b85e82b490540407ae91e687fb1c23aba6a5 0       08-conclusion.ipynb
+100644 c457ca7cc41dfbe6b01bc24147ff8d0bbef4cf82 0       README.md
+100644 26017d5a160d8a889eb44afc43fa0a78e02cf23c 0       cover.jpg
+100644 e3cf049c46ef54b8b69dd9b2fa4d8d01376cc8e4 0       data/adult.data
+100644 a79acb5397ac7ac129432f04273978fdb8a34fe1 0       data/citibike.csv
+100644 068aefdad310468a689b14d7b776b8f5c17edc8f 0       data/ram_price.csv
+100644 602432bbea12075624a2f9717c3bfcbfffe6daca 0       environment.yml
+100644 f13883b5de1d0d82874e283bd278c811b3ae47f6 0       images/05_gridsearch_overview.png
+100644 2d591de6a5accb3990878a3bd9bcf1ead3b0c6b6 0       images/api_table.png
+100644 b0d2c29aedb4dd6eac034330877fc2442588e5fd 0       images/bag_of_words.png
+100644 ee48bbe53c959ef1c876bab71691f91e8000d535 0       images/bag_of_words.svg
+100644 ee37f36407be2a02ad185a2a998f68c869809a62 0       images/classifier_comparison.png
+100644 9eca197fa8226bf47f769233d75f62faa7da3b6d 0       images/dendrogram.png
+100644 eb7e6c9b91aec089deca2ae094682d73fa18330b 0       images/iris_petal_sepal.png
+100644 3c5501c95a7d144c137fa24566800931f02ebc1e 0       images/iris_petal_sepal.svg
+100644 ad59bbe62c9a8d1cf2fad329528b44d330bc7431 0       images/overfitting_underfitting_cartoon.png
+100644 1882b9312eb6f0bd7eba8fabbc5dde9f905dda2a 0       images/overfitting_underfitting_cartoon.svg
+100644 0687003b5cadd4593081352bbb820a1e80187968 0       images/pipeline.png
+100644 c6a848a411161aa90aa7f03093c1c59e8d67aab3 0       images/pipeline.svg
+100644 8b2cb0941d3dbc26c7d59e5eeb14833b285127d7 0       mglearn/__init__.py
+100644 961a799664ec6785f105883408db036193775c07 0       mglearn/datasets.py
+100644 069a3c4ad36472c45a462c2457a25b5700af9a4f 0       mglearn/make_blobs.py
+100644 25b549a65f022001031e0670b612b8378cc8f9cd 0       mglearn/plot_2d_separator.py
+100644 c734e412e7799ba4daa3c1000b7e4b0343dcf779 0       mglearn/plot_agglomerative.py
+100644 f710fada49d8e202c88e0310925e822723cb3e6e 0       mglearn/plot_animal_tree.py
+100644 388000ba17eeceb32ad72fa3295e0a8675634bbc 0       mglearn/plot_cross_validation.py
+100644 21d2f2c39550acb778840217a402bdee5d3c7060 0       mglearn/plot_dbscan.py
+100644 1ca44efb9d30c6ffb55aebcd6d04bbb260e54387 0       mglearn/plot_decomposition.py
+100644 fe805d5c4e39708a4ede3849ead05e467a3ba8bf 0       mglearn/plot_grid_search.py
+100644 dd5adfff69a6365c044726fb7a81b74d0fb31a3d 0       mglearn/plot_helpers.py
+100644 5b645b075e08033cf594fb020da16e29c55e4e4e 0       mglearn/plot_improper_preprocessing.py
+100644 baa85bf3fb8bcb4a43a67647da0e0f11f242bbe9 0       mglearn/plot_interactive_tree.py
+100644 8cabc95a212abc2bc479f93d0ec9e25ea939079b 0       mglearn/plot_kmeans.py
+100644 825dacf3a7f3154563fa5aa63085b6c937e81693 0       mglearn/plot_kneighbors_regularization.py
+100644 e78ea9ec481aaa77fa4282644fd8c31d95c663bc 0       mglearn/plot_knn_classification.py
+100644 534e4c177b3b875055cf3bc8aa81353837994a24 0       mglearn/plot_knn_regression.py
+100644 8da80fdaae494ec461734d5866e0024d54c0b8b5 0       mglearn/plot_linear_regression.py
+100644 5f8e0dcd18b3f294df20fbc36dcbb61b3348f920 0       mglearn/plot_linear_svc_regularization.py
+100644 7d483f3cce1d9c6ebd0bc5c33950d3c907d7b3f7 0       mglearn/plot_metrics.py
+100644 3d1961d9862a5a794f8f8dd119cc5603526fcccc 0       mglearn/plot_nmf.py
+100644 9119a67a833fd446d7110d60aa0b1d74780018ab 0       mglearn/plot_nn_graphs.py
+100644 099b4aa4b421ee36663b5016ff64bba06897aa1e 0       mglearn/plot_pca.py
+100644 f213cecc6ca90e614e5f42df7a52f42cc5b45bb8 0       mglearn/plot_rbf_svm_parameters.py
+100644 4fa90ace6e7e7ab792d3e7d0997da9886704bfbe 0       mglearn/plot_ridge.py
+100644 aecf1efabef4ac025955cb9afec94504f6e9ba0d 0       mglearn/plot_scaling.py
+100644 a59d4c2c44930f70a3389c83ac2aab91d723f6c5 0       mglearn/plot_tree_nonmonotonous.py
+100644 4dcb5079d6580d18ca486861516d97ae906bd00b 0       mglearn/plots.py
+100644 b67686e56d9bb71feb17d0f176fab1d844949f59 0       mglearn/tools.py
+100644 cce16eed4a6849fc43e40838a7b4864ec30dc3f2 0       preamble.py
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git ls-tree
+usage: git ls-tree [<options>] <tree-ish> [<path>...]
+
+    -d                    only show trees
+    -r                    recurse into subtrees
+    -t                    show trees when recursing
+    -z                    terminate entries with NUL byte     
+    -l, --long            include object size
+    --name-only           list only filenames
+    --name-status         list only filenames
+    --full-name           use full path names
+    --full-tree           list entire tree; not just current directory (implies --full-name)
+    --abbrev[=<n>]        use <n> digits to display object names
+
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git ls-tree --name-only
+usage: git ls-tree [<options>] <tree-ish> [<path>...]
+
+    -d                    only show trees
+    -r                    recurse into subtrees
+    -t                    show trees when recursing
+    -z                    terminate entries with NUL byte     
+    -l, --long            include object size
+    --name-only           list only filenames
+    --name-status         list only filenames
+    --full-name           use full path names
+    --full-tree           list entire tree; not just current directory (implies --full-name)
+    --abbrev[=<n>]        use <n> digits to display object names
+
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git ls-tree -r py --name-only
+.gitignore
+01-introduction.ipynb
+02-supervised-learning.ipynb
+03-unsupervised-learning.ipynb
+04-representing-data-feature-engineering.ipynb
+05-model-evaluation-and-improvement.ipynb
+06-algorithm-chains-and-pipelines.ipynb
+07-working-with-text-data.ipynb
+08-conclusion.ipynb
+README.md
+cover.jpg
+data/adult.data
+data/citibike.csv
+data/ram_price.csv
+environment.yml
+images/05_gridsearch_overview.png
+images/api_table.png
+images/bag_of_words.png
+images/bag_of_words.svg
+images/classifier_comparison.png
+images/dendrogram.png
+images/iris_petal_sepal.png
+images/iris_petal_sepal.svg
+images/overfitting_underfitting_cartoon.png
+images/overfitting_underfitting_cartoon.svg
+images/pipeline.png
+images/pipeline.svg
+mglearn/__init__.py
+mglearn/datasets.py
+mglearn/make_blobs.py
+mglearn/plot_2d_separator.py
+mglearn/plot_agglomerative.py
+mglearn/plot_animal_tree.py
+mglearn/plot_cross_validation.py
+mglearn/plot_dbscan.py
+mglearn/plot_decomposition.py
+mglearn/plot_grid_search.py
+mglearn/plot_helpers.py
+mglearn/plot_improper_preprocessing.py
+mglearn/plot_interactive_tree.py
+mglearn/plot_kmeans.py
+mglearn/plot_kneighbors_regularization.py
+mglearn/plot_knn_classification.py
+mglearn/plot_knn_regression.py
+mglearn/plot_linear_regression.py
+mglearn/plot_linear_svc_regularization.py
+mglearn/plot_metrics.py
+mglearn/plot_nmf.py
+mglearn/plot_nn_graphs.py
+mglearn/plot_pca.py
+mglearn/plot_rbf_svm_parameters.py
+mglearn/plot_ridge.py
+mglearn/plot_scaling.py
+mglearn/plot_tree_nonmonotonous.py
+mglearn/plots.py
+mglearn/tools.py
+preamble.py
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git reset .
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git ls-tree -r py --name-only
+.gitignore
+01-introduction.ipynb
+02-supervised-learning.ipynb
+03-unsupervised-learning.ipynb
+04-representing-data-feature-engineering.ipynb
+05-model-evaluation-and-improvement.ipynb
+06-algorithm-chains-and-pipelines.ipynb
+07-working-with-text-data.ipynb
+08-conclusion.ipynb
+README.md
+cover.jpg
+data/adult.data
+data/citibike.csv
+data/ram_price.csv
+environment.yml
+images/05_gridsearch_overview.png
+images/api_table.png
+images/bag_of_words.png
+images/bag_of_words.svg
+images/classifier_comparison.png
+images/dendrogram.png
+images/iris_petal_sepal.png
+images/iris_petal_sepal.svg
+images/overfitting_underfitting_cartoon.png
+images/overfitting_underfitting_cartoon.svg
+images/pipeline.png
+images/pipeline.svg
+mglearn/__init__.py
+mglearn/datasets.py
+mglearn/make_blobs.py
+mglearn/plot_2d_separator.py
+mglearn/plot_agglomerative.py
+mglearn/plot_animal_tree.py
+mglearn/plot_cross_validation.py
+mglearn/plot_dbscan.py
+mglearn/plot_decomposition.py
+mglearn/plot_grid_search.py
+mglearn/plot_helpers.py
+mglearn/plot_improper_preprocessing.py
+mglearn/plot_interactive_tree.py
+mglearn/plot_kmeans.py
+mglearn/plot_kneighbors_regularization.py
+mglearn/plot_knn_classification.py
+mglearn/plot_knn_regression.py
+mglearn/plot_linear_regression.py
+mglearn/plot_linear_svc_regularization.py
+mglearn/plot_metrics.py
+mglearn/plot_nmf.py
+mglearn/plot_nn_graphs.py
+mglearn/plot_pca.py
+mglearn/plot_rbf_svm_parameters.py
+mglearn/plot_ridge.py
+mglearn/plot_scaling.py
+mglearn/plot_tree_nonmonotonous.py
+mglearn/plots.py
+mglearn/tools.py
+preamble.py
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git ls-files
+.gitignore
+01-introduction.ipynb
+02-supervised-learning.ipynb
+03-unsupervised-learning.ipynb
+04-representing-data-feature-engineering.ipynb
+05-model-evaluation-and-improvement.ipynb
+06-algorithm-chains-and-pipelines.ipynb
+07-working-with-text-data.ipynb
+08-conclusion.ipynb
+README.md
+cover.jpg
+data/adult.data
+data/citibike.csv
+data/ram_price.csv
+environment.yml
+images/05_gridsearch_overview.png
+images/api_table.png
+images/bag_of_words.png
+images/bag_of_words.svg
+images/classifier_comparison.png
+images/dendrogram.png
+images/iris_petal_sepal.png
+images/iris_petal_sepal.svg
+images/overfitting_underfitting_cartoon.png
+images/overfitting_underfitting_cartoon.svg
+images/pipeline.png
+images/pipeline.svg
+mglearn/__init__.py
+mglearn/datasets.py
+mglearn/make_blobs.py
+mglearn/plot_2d_separator.py
+mglearn/plot_agglomerative.py
+mglearn/plot_animal_tree.py
+mglearn/plot_cross_validation.py
+mglearn/plot_dbscan.py
+mglearn/plot_decomposition.py
+mglearn/plot_grid_search.py
+mglearn/plot_helpers.py
+mglearn/plot_improper_preprocessing.py
+mglearn/plot_interactive_tree.py
+mglearn/plot_kmeans.py
+mglearn/plot_kneighbors_regularization.py
+mglearn/plot_knn_classification.py
+mglearn/plot_knn_regression.py
+mglearn/plot_linear_regression.py
+mglearn/plot_linear_svc_regularization.py
+mglearn/plot_metrics.py
+mglearn/plot_nmf.py
+mglearn/plot_nn_graphs.py
+mglearn/plot_pca.py
+mglearn/plot_rbf_svm_parameters.py
+mglearn/plot_ridge.py
+mglearn/plot_scaling.py
+mglearn/plot_tree_nonmonotonous.py
+mglearn/plots.py
+mglearn/tools.py
+preamble.py
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git rm .gitignore 01-introduction.ipynb 02-supervised-learning.ipynb
+rm '.gitignore'
+rm '01-introduction.ipynb'
+rm '02-supervised-learning.ipynb'
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git revert
+usage: git revert [<options>] <commit-ish>...
+   or: git revert <subcommand>
+
+    --quit                end revert or cherry-pick sequence  
+    --continue            resume revert or cherry-pick sequence
+    --abort               cancel revert or cherry-pick sequence
+    --skip                skip current commit and continue    
+    --cleanup <mode>      how to strip spaces and #comments from message
+    -n, --no-commit       don't automatically commit
+    -e, --edit            edit the commit message
+    -s, --signoff         add a Signed-off-by trailer
+    -m, --mainline <parent-number>
+                          select mainline parent
+    --rerere-autoupdate   update the index with reused conflict resolution if possible
+    --strategy <strategy>
+                          merge strategy
+    -X, --strategy-option <option>
+                          option for merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git revert .
+fatal: bad revision '.'
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git revert -a
+error: empty commit set passed
+fatal: revert failed
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git commit
+hint: Waiting for your editor to close the file... 
+Aborting commit due to empty commit message.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git commit -m "rm"
+[py 45ea883] rm
+ 3 files changed, 5661 deletions(-)
+ delete mode 100644 .gitignore
+ delete mode 100644 01-introduction.ipynb
+ delete mode 100644 02-supervised-learning.ipynb
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git revert
+usage: git revert [<options>] <commit-ish>...
+   or: git revert <subcommand>
+
+    --quit                end revert or cherry-pick sequence  
+    --continue            resume revert or cherry-pick sequence
+    --abort               cancel revert or cherry-pick sequence
+    --skip                skip current commit and continue    
+    --cleanup <mode>      how to strip spaces and #comments from message
+    -n, --no-commit       don't automatically commit
+    -e, --edit            edit the commit message
+    -s, --signoff         add a Signed-off-by trailer
+    -m, --mainline <parent-number>
+                          select mainline parent
+    --rerere-autoupdate   update the index with reused conflict resolution if possible
+    --strategy <strategy>
+                          merge strategy
+    -X, --strategy-option <option>
+                          option for merge strategy
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git revert -a
+error: empty commit set passed
+fatal: revert failed
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git reset --soft
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git revert HEAD
+hint: Waiting for your editor to close the file... 
+[py e4c7a36] Revert "rm"
+ 3 files changed, 5661 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 01-introduction.ipynb
+ create mode 100644 02-supervised-learning.ipynb
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git ls-files
+.gitignore
+01-introduction.ipynb
+02-supervised-learning.ipynb
+03-unsupervised-learning.ipynb
+04-representing-data-feature-engineering.ipynb
+05-model-evaluation-and-improvement.ipynb
+06-algorithm-chains-and-pipelines.ipynb
+07-working-with-text-data.ipynb
+08-conclusion.ipynb
+README.md
+cover.jpg
+data/adult.data
+data/citibike.csv
+data/ram_price.csv
+environment.yml
+images/05_gridsearch_overview.png
+images/api_table.png
+images/bag_of_words.png
+images/bag_of_words.svg
+images/classifier_comparison.png
+images/dendrogram.png
+images/iris_petal_sepal.png
+images/iris_petal_sepal.svg
+images/overfitting_underfitting_cartoon.png
+images/overfitting_underfitting_cartoon.svg
+images/pipeline.png
+images/pipeline.svg
+mglearn/__init__.py
+mglearn/datasets.py
+mglearn/make_blobs.py
+mglearn/plot_2d_separator.py
+mglearn/plot_agglomerative.py
+mglearn/plot_animal_tree.py
+mglearn/plot_cross_validation.py
+mglearn/plot_dbscan.py
+mglearn/plot_decomposition.py
+mglearn/plot_grid_search.py
+mglearn/plot_helpers.py
+mglearn/plot_improper_preprocessing.py
+mglearn/plot_interactive_tree.py
+mglearn/plot_kmeans.py
+mglearn/plot_kneighbors_regularization.py
+mglearn/plot_knn_classification.py
+mglearn/plot_knn_regression.py
+mglearn/plot_linear_regression.py
+mglearn/plot_linear_svc_regularization.py
+mglearn/plot_metrics.py
+mglearn/plot_nmf.py
+mglearn/plot_nn_graphs.py
+mglearn/plot_pca.py
+mglearn/plot_rbf_svm_parameters.py
+mglearn/plot_ridge.py
+mglearn/plot_scaling.py
+mglearn/plot_tree_nonmonotonous.py
+mglearn/plots.py
+mglearn/tools.py
+preamble.py
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git reset
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git ls-files
+.gitignore
+01-introduction.ipynb
+02-supervised-learning.ipynb
+03-unsupervised-learning.ipynb
+04-representing-data-feature-engineering.ipynb
+05-model-evaluation-and-improvement.ipynb
+06-algorithm-chains-and-pipelines.ipynb
+07-working-with-text-data.ipynb
+08-conclusion.ipynb
+README.md
+cover.jpg
+data/adult.data
+data/citibike.csv
+data/ram_price.csv
+environment.yml
+images/05_gridsearch_overview.png
+images/api_table.png
+images/bag_of_words.png
+images/bag_of_words.svg
+images/classifier_comparison.png
+images/dendrogram.png
+images/iris_petal_sepal.png
+images/iris_petal_sepal.svg
+images/overfitting_underfitting_cartoon.png
+images/overfitting_underfitting_cartoon.svg
+images/pipeline.png
+images/pipeline.svg
+mglearn/__init__.py
+mglearn/datasets.py
+mglearn/make_blobs.py
+mglearn/plot_2d_separator.py
+mglearn/plot_agglomerative.py
+mglearn/plot_animal_tree.py
+mglearn/plot_cross_validation.py
+mglearn/plot_dbscan.py
+mglearn/plot_decomposition.py
+mglearn/plot_grid_search.py
+mglearn/plot_helpers.py
+mglearn/plot_improper_preprocessing.py
+mglearn/plot_interactive_tree.py
+mglearn/plot_kmeans.py
+mglearn/plot_kneighbors_regularization.py
+mglearn/plot_knn_classification.py
+mglearn/plot_knn_regression.py
+mglearn/plot_linear_regression.py
+mglearn/plot_linear_svc_regularization.py
+mglearn/plot_metrics.py
+mglearn/plot_nmf.py
+mglearn/plot_nn_graphs.py
+mglearn/plot_pca.py
+mglearn/plot_rbf_svm_parameters.py
+mglearn/plot_ridge.py
+mglearn/plot_scaling.py
+mglearn/plot_tree_nonmonotonous.py
+mglearn/plots.py
+mglearn/tools.py
+preamble.py
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git ls-files
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git remote
+rem
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git branch
+  master
+* py
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ cd ~/Demo
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git remote
+rem
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git remote -u
+error: unknown switch `u'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...     
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>] 
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a 
+subcommand
+
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git remote -v
+rem     https://github.com/trinadia/test.git (fetch)
+rem     https://github.com/trinadia/test.git (push)
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git pull
+remote: Enumerating objects: 64, done.
+remote: Counting objects: 100% (64/64), done.
+remote: Compressing objects: 100% (62/62), done.
+remote: Total 62 (delta 2), reused 0 (delta 0), pack-reused 0 
+Unpacking objects: 100% (62/62), 20.10 MiB | 2.63 MiB/s, done.
+From https://github.com/trinadia/test
+   f72b9c6..4502f3f  py         -> rem/py
+Updating f72b9c6..4502f3f
+Fast-forward
+ intro_to_ML/01-introduction.ipynb                  |   976 +
+ intro_to_ML/02-supervised-learning.ipynb           |  4682 + 
+ intro_to_ML/03-unsupervised-learning.ipynb         |  3175 + 
+ .../04-representing-data-feature-engineering.ipynb |  2500 + 
+ .../05-model-evaluation-and-improvement.ipynb      |  3057 + 
+ .../06-algorithm-chains-and-pipelines.ipynb        |   823 + 
+ intro_to_ML/07-working-with-text-data.ipynb        |  1405 + 
+ intro_to_ML/08-conclusion.ipynb                    |   129 + 
+ intro_to_ML/README.md                              |    83 + 
+ intro_to_ML/cover.jpg                              |   Bin 0 
+-> 76761 bytes
+ intro_to_ML/data/adult.data                        | 32562 +++++++
+ intro_to_ML/data/citibike.csv                      |  4213 + 
+ intro_to_ML/data/ram_price.csv                     |   334 + 
+ intro_to_ML/environment.yml                        |    12 + 
+ intro_to_ML/images/05_gridsearch_overview.png      |   Bin 0 
+-> 27976 bytes
+ intro_to_ML/images/api_table.png                   |   Bin 0 
+-> 22631 bytes
+ intro_to_ML/images/bag_of_words.png                |   Bin 0 
+-> 27391 bytes
+ intro_to_ML/images/bag_of_words.svg                |   813 + 
+ intro_to_ML/images/classifier_comparison.png       |   Bin 0 
+-> 511840 bytes
+ intro_to_ML/images/dendrogram.png                  |   Bin 0 
+-> 14627 bytes
+ intro_to_ML/images/iris_petal_sepal.png            |   Bin 0 
+-> 690685 bytes
+ intro_to_ML/images/iris_petal_sepal.svg            | 91756 +++++++++++++++++++
+ .../images/overfitting_underfitting_cartoon.png    |   Bin 0 
+-> 10857 bytes
+ .../images/overfitting_underfitting_cartoon.svg    |   505 + 
+ intro_to_ML/images/pipeline.png                    |   Bin 0 
+-> 28296 bytes
+ intro_to_ML/images/pipeline.svg                    |   854 + 
+ intro_to_ML/mglearn/__init__.py                    |     7 + 
+ intro_to_ML/mglearn/datasets.py                    |    64 + 
+ intro_to_ML/mglearn/make_blobs.py                  |   100 + 
+ intro_to_ML/mglearn/plot_2d_separator.py           |   146 + 
+ intro_to_ML/mglearn/plot_agglomerative.py          |    89 + 
+ intro_to_ML/mglearn/plot_animal_tree.py            |    27 + 
+ intro_to_ML/mglearn/plot_cross_validation.py       |   238 + 
+ intro_to_ML/mglearn/plot_dbscan.py                 |    47 + 
+ intro_to_ML/mglearn/plot_decomposition.py          |    31 + 
+ intro_to_ML/mglearn/plot_grid_search.py            |    93 + 
+ intro_to_ML/mglearn/plot_helpers.py                |   108 + 
+ intro_to_ML/mglearn/plot_improper_preprocessing.py |    76 + 
+ intro_to_ML/mglearn/plot_interactive_tree.py       |    95 + 
+ intro_to_ML/mglearn/plot_kmeans.py                 |   129 + 
+ .../mglearn/plot_kneighbors_regularization.py      |    30 + 
+ intro_to_ML/mglearn/plot_knn_classification.py     |    27 + 
+ intro_to_ML/mglearn/plot_knn_regression.py         |    38 + 
+ intro_to_ML/mglearn/plot_linear_regression.py      |    32 + 
+ .../mglearn/plot_linear_svc_regularization.py      |    37 + 
+ intro_to_ML/mglearn/plot_metrics.py                |    90 + 
+ intro_to_ML/mglearn/plot_nmf.py                    |    87 + 
+ intro_to_ML/mglearn/plot_nn_graphs.py              |   116 + 
+ intro_to_ML/mglearn/plot_pca.py                    |   130 + 
+ intro_to_ML/mglearn/plot_rbf_svm_parameters.py     |    30 + 
+ intro_to_ML/mglearn/plot_ridge.py                  |    28 + 
+ intro_to_ML/mglearn/plot_scaling.py                |    42 + 
+ intro_to_ML/mglearn/plot_tree_nonmonotonous.py     |    26 + 
+ intro_to_ML/mglearn/plots.py                       |    69 + 
+ intro_to_ML/mglearn/tools.py                       |   128 + 
+ intro_to_ML/preamble.py                            |    24 + 
+ 56 files changed, 150063 insertions(+)
+ create mode 100644 intro_to_ML/01-introduction.ipynb
+ create mode 100644 intro_to_ML/02-supervised-learning.ipynb  
+ create mode 100644 intro_to_ML/03-unsupervised-learning.ipynb
+ create mode 100644 intro_to_ML/04-representing-data-feature-engineering.ipynb
+ create mode 100644 intro_to_ML/05-model-evaluation-and-improvement.ipynb
+ create mode 100644 intro_to_ML/06-algorithm-chains-and-pipelines.ipynb
+ create mode 100644 intro_to_ML/07-working-with-text-data.ipynb
+ create mode 100644 intro_to_ML/08-conclusion.ipynb
+ create mode 100644 intro_to_ML/README.md
+ create mode 100644 intro_to_ML/cover.jpg
+ create mode 100644 intro_to_ML/data/adult.data
+ create mode 100644 intro_to_ML/data/citibike.csv
+ create mode 100644 intro_to_ML/data/ram_price.csv
+ create mode 100644 intro_to_ML/environment.yml
+ create mode 100644 intro_to_ML/images/05_gridsearch_overview.png
+ create mode 100644 intro_to_ML/images/api_table.png
+ create mode 100644 intro_to_ML/images/bag_of_words.png       
+ create mode 100644 intro_to_ML/images/bag_of_words.svg       
+ create mode 100644 intro_to_ML/images/classifier_comparison.png
+ create mode 100644 intro_to_ML/images/dendrogram.png
+ create mode 100644 intro_to_ML/images/iris_petal_sepal.png   
+ create mode 100644 intro_to_ML/images/iris_petal_sepal.svg   
+ create mode 100644 intro_to_ML/images/overfitting_underfitting_cartoon.png
+ create mode 100644 intro_to_ML/images/overfitting_underfitting_cartoon.svg
+ create mode 100644 intro_to_ML/images/pipeline.png
+ create mode 100644 intro_to_ML/images/pipeline.svg
+ create mode 100644 intro_to_ML/mglearn/__init__.py
+ create mode 100644 intro_to_ML/mglearn/datasets.py
+ create mode 100644 intro_to_ML/mglearn/make_blobs.py
+ create mode 100644 intro_to_ML/mglearn/plot_2d_separator.py  
+ create mode 100644 intro_to_ML/mglearn/plot_agglomerative.py 
+ create mode 100644 intro_to_ML/mglearn/plot_animal_tree.py   
+ create mode 100644 intro_to_ML/mglearn/plot_cross_validation.py
+ create mode 100644 intro_to_ML/mglearn/plot_dbscan.py        
+ create mode 100644 intro_to_ML/mglearn/plot_decomposition.py 
+ create mode 100644 intro_to_ML/mglearn/plot_grid_search.py   
+ create mode 100644 intro_to_ML/mglearn/plot_helpers.py       
+ create mode 100644 intro_to_ML/mglearn/plot_improper_preprocessing.py
+ create mode 100644 intro_to_ML/mglearn/plot_interactive_tree.py
+ create mode 100644 intro_to_ML/mglearn/plot_kmeans.py        
+ create mode 100644 intro_to_ML/mglearn/plot_kneighbors_regularization.py
+ create mode 100644 intro_to_ML/mglearn/plot_knn_classification.py
+ create mode 100644 intro_to_ML/mglearn/plot_knn_regression.py
+ create mode 100644 intro_to_ML/mglearn/plot_linear_regression create mode 100644 intro_to_ML/mglearn/plot_linear_regression.py
+ create mode 100644 intro_to_ML/mglearn/plot_linear_svc_regularization.py
+ create mode 100644 intro_to_ML/mglearn/plot_metrics.py
+ create mode 100644 intro_to_ML/mglearn/plot_nmf.py
+ create mode 100644 intro_to_ML/mglearn/plot_nn_graphs.py
+ create mode 100644 intro_to_ML/mglearn/plot_pca.py
+ create mode 100644 intro_to_ML/mglearn/plot_rbf_svm_parameters.py
+ create mode 100644 intro_to_ML/mglearn/plot_ridge.py
+ create mode 100644 intro_to_ML/mglearn/plot_scaling.py
+ create mode 100644 intro_to_ML/mglearn/plot_tree_nonmonotonous.py
+ create mode 100644 intro_to_ML/mglearn/plots.py
+ create mode 100644 intro_to_ML/mglearn/tools.py
+ create mode 100644 intro_to_ML/preamble.py
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$
+

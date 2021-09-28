@@ -1,0 +1,13 @@
+Hello World in Different Languages
+
+C++
+cout >> "Hello World!";
+
+C
+printf("Hello World!");
+
+Python
+print("Hello World")
+
+FORTRAN 
+print *, "Hello World!"

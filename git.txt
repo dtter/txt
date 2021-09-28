@@ -1,0 +1,35 @@
+$ mkdir Demo
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~ (master)
+$ cd Demo
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ echo "#Demo" >> READNE.md
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ echo "#Demo" >> README.md
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ cat README.md
+#Demo
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git init
+Initialized empty Git repository in C:/Users/3nadi/Demo/.git/
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git add README.md
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git commit -m "first commit"
+[master (root-commit) dc4e32d] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git remote add origin https://github.com/trinadia/Demo.git
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git push -u origin master

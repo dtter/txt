@@ -1,0 +1,9 @@
+HOW TO SET PATH IN UBUNTU
+>> export PATH=$PATH:/place/with/the/directory/
+
+HOW TO SEE THE PATH
+>> echo $PATH
+
+HOW TO OPEN C++ FILE IN TERMINAL
+>> g++ -o <filename> <filename.cc>
+>> ./<filename>

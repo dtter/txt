@@ -1,0 +1,290 @@
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git ls-files
+folder/README.md
+intro_to_ML/01-introduction.ipynb
+intro_to_ML/02-supervised-learning.ipynb
+intro_to_ML/03-unsupervised-learning.ipynb
+intro_to_ML/04-representing-data-feature-engineering.ipynb
+intro_to_ML/05-model-evaluation-and-improvement.ipynb     
+intro_to_ML/06-algorithm-chains-and-pipelines.ipynb       
+intro_to_ML/07-working-with-text-data.ipynb
+intro_to_ML/08-conclusion.ipynb
+intro_to_ML/README.md
+intro_to_ML/cover.jpg
+intro_to_ML/data/adult.data
+intro_to_ML/data/citibike.csv
+intro_to_ML/data/ram_price.csv
+intro_to_ML/environment.yml
+intro_to_ML/images/05_gridsearch_overview.png
+intro_to_ML/images/api_table.png
+intro_to_ML/images/bag_of_words.png
+intro_to_ML/images/bag_of_words.svg
+intro_to_ML/images/classifier_comparison.png
+intro_to_ML/images/dendrogram.png
+intro_to_ML/images/iris_petal_sepal.png
+intro_to_ML/images/iris_petal_sepal.svg
+intro_to_ML/images/overfitting_underfitting_cartoon.png
+intro_to_ML/images/overfitting_underfitting_cartoon.svg
+intro_to_ML/images/pipeline.png
+intro_to_ML/images/pipeline.svg
+intro_to_ML/make.txt
+intro_to_ML/mglearn/__init__.py
+intro_to_ML/mglearn/datasets.py
+intro_to_ML/mglearn/make_blobs.py
+intro_to_ML/mglearn/plot_2d_separator.py
+intro_to_ML/mglearn/plot_agglomerative.py
+intro_to_ML/mglearn/plot_animal_tree.py
+intro_to_ML/mglearn/plot_cross_validation.py
+intro_to_ML/mglearn/plot_dbscan.py
+intro_to_ML/mglearn/plot_decomposition.py
+intro_to_ML/mglearn/plot_grid_search.py
+intro_to_ML/mglearn/plot_helpers.py
+intro_to_ML/mglearn/plot_improper_preprocessing.py
+intro_to_ML/mglearn/plot_interactive_tree.py
+intro_to_ML/mglearn/plot_kmeans.py
+intro_to_ML/mglearn/plot_kneighbors_regularization.py
+intro_to_ML/mglearn/plot_knn_classification.py
+intro_to_ML/mglearn/plot_knn_regression.py
+intro_to_ML/mglearn/plot_linear_regression.py
+intro_to_ML/mglearn/plot_linear_svc_regularization.py
+intro_to_ML/mglearn/plot_metrics.py
+intro_to_ML/mglearn/plot_nmf.py
+intro_to_ML/mglearn/plot_nn_graphs.py
+intro_to_ML/mglearn/plot_pca.py
+intro_to_ML/mglearn/plot_rbf_svm_parameters.py
+intro_to_ML/mglearn/plot_ridge.py
+intro_to_ML/mglearn/plot_scaling.py
+intro_to_ML/mglearn/plot_tree_nonmonotonous.py
+intro_to_ML/mglearn/plots.py
+intro_to_ML/mglearn/tools.py
+intro_to_ML/preamble.py
+notebook.ipynb
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git ls-files
+folder/README.md
+intro_to_ML/01-introduction.ipynb
+intro_to_ML/02-supervised-learning.ipynb
+intro_to_ML/03-unsupervised-learning.ipynb
+intro_to_ML/04-representing-data-feature-engineering.ipynb
+intro_to_ML/05-model-evaluation-and-improvement.ipynb
+intro_to_ML/06-algorithm-chains-and-pipelines.ipynb
+intro_to_ML/07-working-with-text-data.ipynb
+intro_to_ML/08-conclusion.ipynb
+intro_to_ML/README.md
+intro_to_ML/cover.jpg
+intro_to_ML/data/adult.data
+intro_to_ML/data/citibike.csv
+intro_to_ML/data/ram_price.csv
+intro_to_ML/environment.yml
+intro_to_ML/images/05_gridsearch_overview.png
+intro_to_ML/images/api_table.png
+intro_to_ML/images/bag_of_words.png
+intro_to_ML/images/bag_of_words.svg
+intro_to_ML/images/classifier_comparison.png
+intro_to_ML/images/dendrogram.png
+intro_to_ML/images/iris_petal_sepal.png
+intro_to_ML/images/iris_petal_sepal.svg
+intro_to_ML/images/overfitting_underfitting_cartoon.png
+intro_to_ML/images/overfitting_underfitting_cartoon.svg
+intro_to_ML/images/pipeline.png
+intro_to_ML/images/pipeline.svg
+intro_to_ML/make.txt
+intro_to_ML/mglearn/__init__.py
+intro_to_ML/mglearn/datasets.py
+intro_to_ML/mglearn/make_blobs.py
+intro_to_ML/mglearn/plot_2d_separator.py
+intro_to_ML/mglearn/plot_agglomerative.py
+intro_to_ML/mglearn/plot_animal_tree.py
+intro_to_ML/mglearn/plot_cross_validation.py
+intro_to_ML/mglearn/plot_dbscan.py
+intro_to_ML/mglearn/plot_decomposition.py
+intro_to_ML/mglearn/plot_grid_search.py
+intro_to_ML/mglearn/plot_helpers.py
+intro_to_ML/mglearn/plot_improper_preprocessing.py
+intro_to_ML/mglearn/plot_interactive_tree.py
+intro_to_ML/mglearn/plot_kmeans.py
+intro_to_ML/mglearn/plot_kneighbors_regularization.py
+intro_to_ML/mglearn/plot_knn_classification.py
+intro_to_ML/mglearn/plot_knn_regression.py
+intro_to_ML/mglearn/plot_linear_regression.py
+intro_to_ML/mglearn/plot_linear_svc_regularization.py
+intro_to_ML/mglearn/plot_metrics.py
+intro_to_ML/mglearn/plot_nmf.py
+intro_to_ML/mglearn/plot_nn_graphs.py
+intro_to_ML/mglearn/plot_pca.py
+intro_to_ML/mglearn/plot_rbf_svm_parameters.py
+intro_to_ML/mglearn/plot_ridge.py
+intro_to_ML/mglearn/plot_scaling.py
+intro_to_ML/mglearn/plot_tree_nonmonotonous.py
+intro_to_ML/mglearn/plots.py
+intro_to_ML/mglearn/tools.py
+intro_to_ML/preamble.py
+notebook.ipynb
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git pull
+Already up to date.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ cd ~/Demo/introduction_to_ml_with_python
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git reset
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git remote
+rem
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git remote -v
+rem     https://github.com/trinadia/test.git (fetch)
+rem     https://github.com/trinadia/test.git (push)
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git rm --cached
+fatal: pathspec 'introduction_to_ml_with_python/' did not match any files
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git rm
+fatal: pathspec 'introduction_to_ml_with_python/' did not match any files
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git pull
+Already up to date.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git commit -m "delete"
+On branch py
+Your branch is up to date with 'rem/py'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../test/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ git ls-files
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ cd Demo
+bash: cd: Demo: No such file or directory
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/introduction_to_ml_with_python (py)
+$ cd ~/Demo
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git ls-files
+folder/README.md
+intro_to_ML/01-introduction.ipynb
+intro_to_ML/02-supervised-learning.ipynb
+intro_to_ML/03-unsupervised-learning.ipynb
+intro_to_ML/04-representing-data-feature-engineering.ipynb
+intro_to_ML/05-model-evaluation-and-improvement.ipynb
+intro_to_ML/06-algorithm-chains-and-pipelines.ipynb
+intro_to_ML/07-working-with-text-data.ipynb
+intro_to_ML/08-conclusion.ipynb
+intro_to_ML/README.md
+intro_to_ML/cover.jpg
+intro_to_ML/data/adult.data
+intro_to_ML/data/citibike.csv
+intro_to_ML/data/ram_price.csv
+intro_to_ML/environment.yml
+intro_to_ML/images/05_gridsearch_overview.png
+intro_to_ML/images/api_table.png
+intro_to_ML/images/bag_of_words.png
+intro_to_ML/images/bag_of_words.svg
+intro_to_ML/images/classifier_comparison.png
+intro_to_ML/images/dendrogram.png
+intro_to_ML/images/iris_petal_sepal.png
+intro_to_ML/images/iris_petal_sepal.svg
+intro_to_ML/images/overfitting_underfitting_cartoon.png
+intro_to_ML/images/overfitting_underfitting_cartoon.svg
+intro_to_ML/images/pipeline.png
+intro_to_ML/images/pipeline.svg
+intro_to_ML/make.txt
+intro_to_ML/mglearn/__init__.py
+intro_to_ML/mglearn/datasets.py
+intro_to_ML/mglearn/make_blobs.py
+intro_to_ML/mglearn/plot_2d_separator.py
+intro_to_ML/mglearn/plot_agglomerative.py
+intro_to_ML/mglearn/plot_animal_tree.py
+intro_to_ML/mglearn/plot_cross_validation.py
+intro_to_ML/mglearn/plot_dbscan.py
+intro_to_ML/mglearn/plot_decomposition.py
+intro_to_ML/mglearn/plot_grid_search.py
+intro_to_ML/mglearn/plot_helpers.py
+intro_to_ML/mglearn/plot_improper_preprocessing.py
+intro_to_ML/mglearn/plot_interactive_tree.py
+intro_to_ML/mglearn/plot_kmeans.py
+intro_to_ML/mglearn/plot_kneighbors_regularization.py
+intro_to_ML/mglearn/plot_knn_classification.py
+intro_to_ML/mglearn/plot_knn_regression.py
+intro_to_ML/mglearn/plot_linear_regression.py
+intro_to_ML/mglearn/plot_linear_svc_regularization.py
+intro_to_ML/mglearn/plot_metrics.py
+intro_to_ML/mglearn/plot_nmf.py
+intro_to_ML/mglearn/plot_nn_graphs.py
+intro_to_ML/mglearn/plot_pca.py
+intro_to_ML/mglearn/plot_rbf_svm_parameters.py
+intro_to_ML/mglearn/plot_ridge.py
+intro_to_ML/mglearn/plot_scaling.py
+intro_to_ML/mglearn/plot_tree_nonmonotonous.py
+intro_to_ML/mglearn/plots.py
+intro_to_ML/mglearn/tools.py
+intro_to_ML/preamble.py
+notebook.ipynb
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git status
+On branch py
+Your branch is up to date with 'rem/py'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git branch
+  master
+* py
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git add README.md
+fatal: pathspec 'README.md' did not match any files
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ cd ~/Demo/folder
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/folder (py)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/folder (py)
+$ git add README.md
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/folder (py)
+$ git commit -m "edit a bit"
+[py f7f6e06] edit a bit
+ 1 file changed, 1 insertion(+)
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/folder (py)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 399 bytes | 199.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/trinadia/test.git
+   4502f3f..f7f6e06  py -> py
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo/folder (py)
+$

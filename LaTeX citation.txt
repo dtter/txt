@@ -1,0 +1,7 @@
+Tools --> Options --> BibTex --> Enable syncing...
+\cite{label} 			To insert a citation where label is the label of a bibliographic entry in a .bib file.
+\bibliography{bibfilename} 	To insert a bibliography where bibfilename is the name of a .bib file.
+\bibliographystyle{bstfilename} To choose a BibTeX bibliographic style file with the extension .bst.
+
+https://blog.mendeley.com/2011/10/25/howto-use-mendeley-to-create-citations-using-latex-and-bibtex/
+https://www.economics.utoronto.ca/osborne/latex/BIBTEX.HTM

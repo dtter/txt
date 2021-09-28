@@ -1,0 +1,170 @@
+In [1]: tup = tuple('home')
+
+In [2]: tup
+Out[2]: ('h', 'o', 'm', 'e')
+
+In [3]: tup[2]
+Out[3]: 'm'
+
+In [4]: tup = tuple(['home', [0, 1, 2], Yes])
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-4-7df6af94982c> in <module>
+----> 1 tup = tuple(['home', [0, 1, 2], Yes])
+
+NameError: name 'Yes' is not defined
+
+In [5]: tup = (['home', [0, 1, 2], True])
+
+In [6]: tup[1] = False
+
+In [7]: tup
+Out[7]: ['home', False, True]
+
+In [8]: tup[2] = 0
+
+In [9]: tup
+Out[9]: ['home', False, 0]
+
+In [10]: tup[1].append('yes')
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-10-41d6b8a8aec9> in <module>
+----> 1 tup[1].append('yes')
+
+AttributeError: 'bool' object has no attribute 'append'
+
+In [11]: tup[1].append(3)
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-11-81d4894f010b> in <module>
+----> 1 tup[1].append(3)
+
+AttributeError: 'bool' object has no attribute 'append'
+
+In [12]: tup[1] = (1, 2, 3)
+
+In [13]: tup
+Out[13]: ['home', (1, 2, 3), 0]
+
+In [14]: tup[1].append(4)
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-14-0c55caf0c9b8> in <module>
+----> 1 tup[1].append(4)
+
+AttributeError: 'tuple' object has no attribute 'append'
+
+In [15]: tup = (4, 5, 6)
+
+In [16]: a, b, c = tup
+
+In [17]: c
+Out[17]: 6
+
+In [18]: tup = 4, 5, (6, 7)
+
+In [19]: a, b, (c, d) = tup
+
+In [20]: d
+Out[20]: 7
+
+In [21]: seq = [(1, 2, 3), (4, 5, 6), (7, 8, 9)]
+
+In [22]: for a, b, c in seq:
+    ...:     print('a={0}, b={1}, c={2}'.format(a, b, c))
+    ...:
+a=1, b=2, c=3
+a=4, b=5, c=6
+a=7, b=8, c=9
+
+In [23]: values = 1, 2, 3, 4, 5
+
+In [24]: a, b, *rest = values
+
+In [25]: a, b
+Out[25]: (1, 2)
+
+In [26]: rest
+Out[26]: [3, 4, 5]
+
+In [27]: a, b, *_ = values
+
+In [28]: a, b
+Out[28]: (1, 2)
+
+In [29]:a = (1, 2, 3, 4, 4, 5)
+
+In [30]: a.count(4)
+Out[30]: 2
+
+# LIST
+
+In [31]: a_list = [2, 3, 7, None]
+
+In [32]: tup = ('foo', 'bar', 'bar')
+
+In [33]: b_list = list(tup)
+
+In [34]: b_list
+Out[34]: ['foo', 'bar', 'bar']
+
+In [35]: b_list[1] = 'peekaboo'
+
+In [36]: b_list
+Out[36]: ['foo', 'peekaboo', 'bar']
+
+# Tuples and list are semantically similar
+
+In [37]: b_list.append('foo')
+
+In [38]: b_list
+Out[38]: ['foo', 'peekaboo', 'bar', 'foo']
+
+In [39]: b_list.remove('foo')
+
+In [40]: b_list
+Out[40]: ['peekaboo', 'bar', 'foo']
+
+In [41]: b_list.insert(1, 'blue')
+
+In [42]: b_list
+Out[42]: ['peekaboo', 'blue', 'bar', 'foo']
+
+In [43]: b_list.pop(3)
+Out[43]: 'foo'
+
+In [44]: b_list
+Out[44]: ['peekaboo', 'blue', 'bar']
+
+In [45]: import bisect
+
+In [46]: c = [1, 2, 4, 3, 5,7]
+
+In [47]: bisect.bisect(c, 3)
+Out[47]: 4
+
+In [48]: bisect.bisect(c, 5)
+Out[48]: 5
+
+In [49]: bisect.insort(c, 6)
+
+In [50]: c
+Out[50]: [1, 2, 4, 3, 5, 6, 7]
+
+In [51]: seq = [5, 4, 7, 8, 1, 3]
+
+In [52]: seq[2:5]
+Out[52]: [7, 8, 1]
+
+In [53]: seq[1:2] = [9, 6]
+
+In [54]: seq
+Out[54]: [5, 9, 6, 7, 8, 1, 3]
+
+In [55]: seq[3:5] = [7, 4]
+
+In [56]: seq
+Out[56]: [5, 9, 6, 7, 4, 1, 3]
+
+page 77

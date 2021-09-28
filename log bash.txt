@@ -1,0 +1,376 @@
+USER@LAPTOP-NSE0OGI2 MINGW64 ~
+$ mkdir Demo
+mkdir: cannot create directory ‘Demo’: File exists
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~
+$ mkdir Demo
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~
+$ cd Demo
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo
+$ echo "##Demo" >> README.md
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo
+$ cat README.md
+##Demo
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo
+$ git init
+Initialized empty Git repository in C:/Users/3nadi/Demo/.git/
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git add README.md
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git commit -m "first commit"
+[master (root-commit) 1ed65e7] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git remote add rem git@github.com:trinadia/test.git
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git push rem
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream rem master
+
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git push --set-upstream rem py
+error: src refspec py does not match any
+error: failed to push some refs to 'github.com:trinadia/test.git'
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git push --set-upstream rem master
+To github.com:trinadia/test.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'github.com:trinadia/test.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git pull README.md
+fatal: invalid gitfile format: README.md
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git push rem
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream rem master
+
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git push --set-upstream rem master
+To github.com:trinadia/test.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'github.com:trinadia/test.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git push --help
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git fetch rem
+remote: Enumerating objects: 102, done.
+remote: Counting objects: 100% (102/102), done.
+remote: Compressing objects: 100% (69/69), done.
+Receiving objects:  83% (85/102)used 70 (delta 24), pack-reused 0R
+Receiving objects: 100% (102/102), 106.15 KiB | 213.00 KiB/s, done.
+Resolving deltas: 100% (41/41), done.
+From github.com:trinadia/test
+ * [new branch]      main       -> rem/main
+ * [new branch]      master     -> rem/master
+ * [new branch]      py         -> rem/py
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (master)
+$ git checkout py
+Switched to a new branch 'py'
+Branch 'py' set up to track remote branch 'py' from 'rem'.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git push rem
+Everything up-to-date
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git status
+On branch py
+Your branch is up to date with 'rem/py'.
+
+nothing to commit, working tree clean
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git pull rem
+Already up to date.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git add README.md
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git commit -m "letsgo"
+On branch py
+Your branch is up to date with 'rem/py'.
+
+nothing to commit, working tree clean
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git push rem
+To github.com:trinadia/test.git
+ ! [rejected]        py -> py (fetch first)
+error: failed to push some refs to 'github.com:trinadia/test.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 704 bytes | 24.00 KiB/s, done.
+From github.com:trinadia/test
+   31b22ee..6605e86  py         -> rem/py
+Updating 31b22ee..6605e86
+Fast-forward
+ README.md => folder/README.md | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename README.md => folder/README.md (100%)
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git add README.md
+fatal: pathspec 'README.md' did not match any files
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git clone github.com:trinadia/test.git
+Cloning into 'test'...
+USER@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ ssh -vT git@github.com
+OpenSSH_8.5p1, OpenSSL 1.1.1k  25 Mar 2021
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: Connecting to github.com [13.250.177.223] port 22.
+debug1: Connection established.
+debug1: identity file /c/Users/3nadi/.ssh/id_rsa type -1
+debug1: identity file /c/Users/3nadi/.ssh/id_rsa-cert type -1
+debug1: identity file /c/Users/3nadi/.ssh/id_dsa type -1
+debug1: identity file /c/Users/3nadi/.ssh/id_dsa-cert type -1
+debug1: identity file /c/Users/3nadi/.ssh/id_ecdsa type -1
+debug1: identity file /c/Users/3nadi/.ssh/id_ecdsa-cert type -1
+debug1: identity file /c/Users/3nadi/.ssh/id_ecdsa_sk type -1
+debug1: identity file /c/Users/3nadi/.ssh/id_ecdsa_sk-cert type -1
+debug1: identity file /c/Users/3nadi/.ssh/id_ed25519 type 3
+debug1: identity file /c/Users/3nadi/.ssh/id_ed25519-cert type -1
+debug1: identity file /c/Users/3nadi/.ssh/id_ed25519_sk type -1
+debug1: identity file /c/Users/3nadi/.ssh/id_ed25519_sk-cert type -1
+debug1: identity file /c/Users/3nadi/.ssh/id_xmss type -1
+debug1: identity file /c/Users/3nadi/.ssh/id_xmss-cert type -1
+debug1: Local version string SSH-2.0-OpenSSH_8.5
+debug1: Remote protocol version 2.0, remote software version babeld-83b59434
+debug1: compat_banner: no match: babeld-83b59434
+debug1: Authenticating to github.com:22 as 'git'
+debug1: load_hostkeys: fopen /c/Users/3nadi/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: curve25519-sha256
+debug1: kex: host key algorithm: rsa-sha2-512
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: nonedebug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: nonedebug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: SSH2_MSG_KEX_ECDH_REPLY received
+debug1: Server host key: ssh-rsa SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8
+debug1: load_hostkeys: fopen /c/Users/3nadi/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: Host 'github.com' is known and matches the RSA host key.
+debug1: Found key in /c/Users/3nadi/.ssh/known_hosts:1
+debug1: rekey out after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: SSH2_MSG_NEWKEYS received
+debug1: rekey in after 134217728 blocks
+debug1: Will attempt key: /c/Users/3nadi/.ssh/id_rsa
+debug1: Will attempt key: /c/Users/3nadi/.ssh/id_dsa
+debug1: Will attempt key: /c/Users/3nadi/.ssh/id_ecdsa
+debug1: Will attempt key: /c/Users/3nadi/.ssh/id_ecdsa_sk
+debug1: Will attempt key: /c/Users/3nadi/.ssh/id_ed25519 ED25519 SHA256:3k6hphAj7UjMT/UHCFceewEnOVTz+SFfRNWb0FAkdKM
+debug1: Will attempt key: /c/Users/3nadi/.ssh/id_ed25519_sk
+debug1: Will attempt key: /c/Users/3nadi/.ssh/id_xmss
+debug1: SSH2_MSG_EXT_INFO received
+debug1: kex_input_ext_info: server-sig-algs=<ssh-ed25519-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp256-cert-v01@openssh.com,sk-ssh-ed25519-cert-v01@openssh.com,sk-ecdsa-sha2-nistp256-cert-v01@openssh.com,rsa-sha2-512-cert-v01@openssh.com,rsa-sha2-256-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com,ssh-dss-cert-v01@openssh.com,sk-ssh-ed25519@openssh.com,sk-ecdsa-sha2-nistp256@openssh.com,ssh-ed25519,ecdsa-sha2-nistp521,ecdsa-sha2-nistp384,ecdsa-sha2-nistp256,rsa-sha2-512,rsa-sha2-256,ssh-rsa,ssh-dss>
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey
+debug1: Next authentication method: publickey
+debug1: Trying private key: /c/Users/3nadi/.ssh/id_rsa
+debug1: Trying private key: /c/Users/3nadi/.ssh/id_dsa
+debug1: Trying private key: /c/Users/3nadi/.ssh/id_ecdsa
+debug1: Trying private key: /c/Users/3nadi/.ssh/id_ecdsa_sk
+debug1: Offering public key: /c/Users/3nadi/.ssh/id_ed25519 ED25519 SHA256:3k6hphAj7UjMT/UHCFceewEnOVTz+SFfRNWb0FAkdKM
+debug1: Server accepts key: /c/Users/3nadi/.ssh/id_ed25519 ED25519 SHA256:3k6hphAj7UjMT/UHCFceewEnOVTz+SFfRNWb0FAkdKM
+debug1: Authentication succeeded (publickey).
+Authenticated to github.com ([13.250.177.223]:22).
+debug1: channel 0: new [client-session]
+debug1: Entering interactive session.
+debug1: pledge: filesystem full
+debug1: client_input_channel_req: channel 0 rtype exit-status reply 0
+Hi trinadia! You've successfully authenticated, but GitHub does not provide shell access.
+debug1: channel 0: free: client-session, nchannels 1
+Transferred: sent 2192, received 2388 bytes, in 0.6 seconds
+Bytes per second: sent 3423.1, received 3729.2
+debug1: Exit status 1
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git clone github.com:trinadia/test.git
+Cloning into 'test'...
+USER@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ ssh -T git@github.com
+Hi trinadia! You've successfully authenticated, but GitHub does not provide shell access.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ ssh-agent -s
+SSH_AUTH_SOCK=/tmp/ssh-O3TBONgxjrU0/agent.981; export SSH_AUTH_SOCK;
+SSH_AGENT_PID=982; export SSH_AGENT_PID;
+echo Agent pid 982;
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git remote set-url origin git@github.com:trinadia/test.git
+error: No such remote 'origin'
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git remote set-url rem git@github.com:trinadia/test.git
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git clone github.com:trinadia/test.git
+Cloning into 'test'...
+USER@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ ssh-agent -s
+SSH_AUTH_SOCK=/tmp/ssh-6JY3iONFv5WQ/agent.1007; export SSH_AUTH_SOCK;
+SSH_AGENT_PID=1008; export SSH_AGENT_PID;
+echo Agent pid 1008;
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ ssh-add -l -E sha256
+Could not open a connection to your authentication agent.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ ssh git@github.com
+PTY allocation request failed on channel 0
+Hi trinadia! You've successfully authenticated, but GitHub does not provide shell access.
+Connection to github.com closed.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git remote set-url rem git@github.com:test.git
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ ssh -T git@github.com
+Hi trinadia! You've successfully authenticated, but GitHub does not provide shell access.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git clone github.com:trinadia/test.git
+Cloning into 'test'...
+USER@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git clone https://github.com/trinadia/test.git
+Cloning into 'test'...
+remote: Enumerating objects: 105, done.
+remote: Counting objects: 100% (105/105), done.
+remote: Compressing objects: 100% (71/71), done.
+remote: Total 105 (delta 41), reused 70 (delta 24), pack-reused 0
+Receiving objects: 100% (105/105), 106.83 KiB | 5.34 MiB/s, done.
+Resolving deltas: 100% (41/41), done.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git branch
+  master
+* py
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git clone -b py https://github.com/trinadia/test.git
+fatal: destination path 'test' already exists and is not an empty directory.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ 
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git remote
+rem
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ 
+USER@LAPTOP-NSE0OGI2 MINGW64 ~
+$ cd Demo
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git clone --single-branch --branch py https://github.com/trinadia/test.git
+fatal: destination path 'test' already exists and is not an empty directory.
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ ls
+folder/  notebook.ipynb  test/
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ ls-files
+bash: ls-files: command not found
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$ git ls-files
+folder/README.md
+notebook.ipynb  
+
+USER@LAPTOP-NSE0OGI2 MINGW64 ~/Demo (py)
+$
