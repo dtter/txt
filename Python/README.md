@@ -29,7 +29,7 @@ names()
 
 ### Aliasing
 `import [module] as [another_name]`
-> More
+> [More](/functiong-and-import-module/import.md)
 ---
 ### Range
 #### range i in python
