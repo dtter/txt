@@ -23,39 +23,13 @@ def names():
 # Call the function
 names()
 ```
-
+> [More](/functiong-and-import-module/function.md)
 ### Import module with dot notation
 `[module].[function]`
 
 ### Aliasing
 `import [module] as [another_name]`
-
-### Call function
-ex:
-```
-import hello # Import hello module
-
-# Call function
-hello.world()
-
-# Print variable
-print(hello.shark)
-```
-import math:
-```Python
-import math
-r = math.sqrt(2)
-
-# or
-
-from math import sqrt
-r = sqrt(2)
-
-# or
-
-from math import * # import everything in math
-r = sqrt(2)
-```
+> More
 ---
 ### Range
 #### range i in python
