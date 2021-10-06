@@ -1,3 +1,5 @@
+## Math for ML
+### Central Machine Learning Problems
 - 3 major components in ML: 
   - data
   - models
