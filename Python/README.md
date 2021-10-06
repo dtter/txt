@@ -23,13 +23,13 @@ def names():
 # Call the function
 names()
 ```
-> [More](/functiong-and-import-module/function.md)
+> [More](https://github.com/dtter/txt/blob/master/Python/functiong-and-import-module/function.md)
 ### Import module with dot notation
 `[module].[function]`
 
 ### Aliasing
 `import [module] as [another_name]`
-> [More](/functiong-and-import-module/import.md)
+> [More](https://github.com/dtter/txt/blob/master/Python/functiong-and-import-module/import.md)
 ---
 ### Range
 #### range i in python
