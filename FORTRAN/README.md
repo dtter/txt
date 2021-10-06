@@ -1,5 +1,5 @@
 List of Contents:
-- [Syntax](/README.md#syntax)
+- [Syntax](https://github.com/dtter/txt/tree/master/FORTRAN#syntax)
 
 ### Syntax
 ``` 
