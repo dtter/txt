@@ -56,8 +56,8 @@ print(result)
 ```
 Output: 9
 ```Python
-def square(x):			Output:
-    y = x ** 2			None
+def square(x):
+    y = x ** 2
     # return y
 
 result = square(3)
@@ -77,10 +77,10 @@ def main():
 main()
 ```
 Output: 
-This is main function
+This is main function </br>
 Hello world
-
----
+</br>
+</br>
 ex:
 ```Python
 # Declare global variable name for use in all functions
