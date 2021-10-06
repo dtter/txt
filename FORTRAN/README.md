@@ -1,3 +1,6 @@
+List of Contents:
+- [Syntax](/README.md#syntax)
+
 ### Syntax
 ``` 
 program name
