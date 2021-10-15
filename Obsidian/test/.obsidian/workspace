@@ -6,22 +6,23 @@
       {
         "id": "555e9a14637a59c7",
         "type": "leaf",
+        "dimension": 52.69709543568465,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Function.md",
+            "file": "just random/find out.md",
             "mode": "source"
           }
-        },
-        "group": "ea05d4a3bf7a867c"
+        }
       },
       {
         "id": "1a5f28b275707fa4",
         "type": "leaf",
+        "dimension": 47.30290456431535,
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "Function.md",
+            "file": "just random/find out.md",
             "options": {
               "collapse-filter": true,
               "search": "",
@@ -48,8 +49,7 @@
               "close": false
             }
           }
-        },
-        "group": "ea05d4a3bf7a867c"
+        }
       }
     ],
     "direction": "vertical"
@@ -89,7 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 241
   },
   "right": {
     "id": "2dda23fcaa628770",
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Function.md",
+                "file": "just random/find out.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,8 +125,12 @@
   },
   "active": "555e9a14637a59c7",
   "lastOpenFiles": [
-    "Function.md",
+    "just random/find out.md",
+    "LaTeX/try math.md",
+    "just random/Function.md",
+    "LaTeX/Untitled.md",
+    "Untitled.md",
     "find out.md",
-    "Untitled.md"
+    "Function.md"
   ]
 }
