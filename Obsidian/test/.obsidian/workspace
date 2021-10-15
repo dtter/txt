@@ -1,0 +1,132 @@
+{
+  "main": {
+    "id": "f2121198141412f4",
+    "type": "split",
+    "children": [
+      {
+        "id": "555e9a14637a59c7",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Function.md",
+            "mode": "source"
+          }
+        },
+        "group": "ea05d4a3bf7a867c"
+      },
+      {
+        "id": "1a5f28b275707fa4",
+        "type": "leaf",
+        "state": {
+          "type": "localgraph",
+          "state": {
+            "file": "Function.md",
+            "options": {
+              "collapse-filter": true,
+              "search": "",
+              "localJumps": 1,
+              "localBacklinks": true,
+              "localForelinks": true,
+              "localInterlinks": false,
+              "showTags": false,
+              "showAttachments": false,
+              "hideUnresolved": false,
+              "collapse-color-groups": true,
+              "colorGroups": [],
+              "collapse-display": true,
+              "showArrow": false,
+              "textFadeMultiplier": 0,
+              "nodeSizeMultiplier": 1,
+              "lineSizeMultiplier": 1,
+              "collapse-forces": true,
+              "centerStrength": 0.518713248970312,
+              "repelStrength": 10,
+              "linkStrength": 1,
+              "linkDistance": 250,
+              "scale": 1,
+              "close": false
+            }
+          }
+        },
+        "group": "ea05d4a3bf7a867c"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "95ae09d152993423",
+    "type": "split",
+    "children": [
+      {
+        "id": "6ec659865cb0818d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5bf6d7f28d80bf16",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "d97b1b5aa181cfea",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "2dda23fcaa628770",
+    "type": "split",
+    "children": [
+      {
+        "id": "608ec684f82da4ac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d2cc9d0653e60a24",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Function.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "555e9a14637a59c7",
+  "lastOpenFiles": [
+    "Function.md",
+    "find out.md",
+    "Untitled.md"
+  ]
+}
