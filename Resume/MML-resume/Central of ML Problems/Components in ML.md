@@ -1,0 +1,7 @@
+- 3 major components in ML:
+	- data
+	- models
+	- learning
+- The data is represented in tabular format by computer, that should be converted into numbers
+- important to use domain knowledge when constructing the representation
+- Even numerical data that could potentially be directly read into a machine learning algorithm should be carefully considered for units, scaling, and constraints

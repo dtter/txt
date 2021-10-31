@@ -1,0 +1,102 @@
+{
+  "main": {
+    "id": "e1fd7d6f293aea73",
+    "type": "split",
+    "children": [
+      {
+        "id": "022cc582e5c66476",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "course.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "13754e52ab5341bc",
+    "type": "split",
+    "children": [
+      {
+        "id": "e477db45e71f988d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1c6bd5fb7b78ef3a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "a25a0fc747186c2f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0117021b66fbd0d4",
+    "type": "split",
+    "children": [
+      {
+        "id": "f85004dfe8f59dbf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "389c49edc9f16f40",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "course.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "022cc582e5c66476",
+  "lastOpenFiles": [
+    "course.md",
+    "Data Visualization.md",
+    "Side note.md",
+    "Central of ML Problems/Components in ML.md",
+    "Math Foundation/Probability and Distribution.md",
+    "code example.md",
+    "Math Foundation/Statistics.md",
+    "appendix.md",
+    "Math Foundation/Linear algebra.md",
+    "Central of ML Problems/Untitled.md"
+  ]
+}
